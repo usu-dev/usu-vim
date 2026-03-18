@@ -1,7 +1,7 @@
 " WARNING: this was vibecoded
 " Vim syntax file
 " Language: usu
-" Maintainer: Local
+" Maintainer: daylinmmorgan
 " Latest Revision: 2026
 
 if exists("b:current_syntax")

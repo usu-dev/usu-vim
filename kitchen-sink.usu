@@ -1,0 +1,42 @@
+# example trying to include all valid syntax
+
+# comment
+#(
+  block comment
+)#
+
+
+.values {
+  .none an unquoted value
+  .single 'single quoted value'
+  .double 'double quoted value'
+  .backtick `backtick quoted value`
+  .multiline
+    this value has multiple lines
+    it will end with a newline
+  .folded-line >
+    this value is actually
+    a single line but is written with multiple lines
+}
+
+.map {
+  .nested-key # comments don't need to start a line
+    {.key val}
+}
+
+
+."quoted keys".key val
+
+.map.nested-key.key2 val
+
+.array-indexed[0][0] val
+.array-indexed [
+  [ val2 ]
+]
+
+.empty {
+  .map {}
+  .array []
+  .value null
+}
+
